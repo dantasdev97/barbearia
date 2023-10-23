@@ -1,0 +1,21 @@
+:root{
+    --primary-normal : #06121E ;
+    --primary-dark : #040f1a;
+    --primary-ligth :#0c2135 ;
+
+    --secondary-normal : #090d11 ;
+    --secondary-dark : #06090c;
+    --secondary-ligth :#1a1f25 ;
+
+    --preto-normal : #090d11 ;
+    --preto-escuro : #161617 ;
+    --preto-claro : #353436 ;
+
+    --branco-normal : #ffffff ;
+    --branco-dark :  #edeaef ;
+    --branco-ligth : #fefbff ;
+
+    --vermelho-normal :#D94140; 
+    --vermelho-dark :#b42b2b;
+    --vermelho-ligth :#d34040;
+}
