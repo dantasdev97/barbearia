@@ -129,3 +129,142 @@ font-size: 46px;
     }
 }
 
+.services{
+    background-color: var(--branco-normal);
+    color: var(--black-normal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px; 
+}
+
+.serviçes-content h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 14px;
+}
+
+.serviçes-content p {
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 780px;
+}
+
+.heaircuts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 44px 34px 44px;  
+}
+
+.heircut{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--branco-normal);
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px rgb(0,0, 0,0.45);
+    overflow: hidden;
+
+}
+
+.img-cabelo img {
+    width: 100%;
+    max-width: 354px;
+}
+
+.heircut img:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.haircut-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    background-color: var(--branco-normal);
+    z-index: 99;
+}
+.haircut-info button{
+    color: var(--branco-normal);
+    background-color: var(--vermelho-normal);
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 0;
+    cursor: default;
+}
+
+@media screen and (max-width:768px) {
+        .heaircuts{
+            flex-direction: column;
+        }
+
+        .haircut img{
+            max-width: 740px;
+        }
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 24px;
+    color: var(--branco-normal);
+}
+
+.footer-icons{
+    display: flex;
+    gap: 8px;
+    color: var(--branco-normal);
+   
+}
+
+.btn-wpp{
+    position: fixed;
+    bottom: 20px;
+    right: -140px;
+    z-index: 99;
+}
+
+.btn-wpp img{
+    max-width: 74px; 
+    transition: Transform 0.4s; 
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.btn-wpp .tooltip-text {
+    visibility: hidden;
+    position: relative;
+    width: 120px;
+    top: 8px;
+    left:-260px;
+    padding: 4px;
+    border-radius: 8px black;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.308);
+    color: var(--branco-normal);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.btn-wpp:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+@media screen and (max-width:768px) {
+                .btn-wpp img {
+                    max-width: 54px;
+            }
+        }
